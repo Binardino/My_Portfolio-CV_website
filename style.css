@@ -11,13 +11,17 @@ body {
   color: #2d2f3b;
   background-color: whitesmoke;
   
-  background-color: #ecf0f4;
+  background-color: #ebe9e6;
 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d1dbe3' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
 }
 
 p {
   line-height: 20px;
+  font-size: 12px;
+}
+
+li {
   font-size: 12px;
 }
 
@@ -40,6 +44,7 @@ main {
 }
 
 h2 {
+  /* text-transform: uppercase; */
   font-size: 20px;
   letter-spacing: 1px;
 }
@@ -54,16 +59,22 @@ h2 {
 
   margin: 0 auto;
   /* margin: 0px 80px; */
-
-
   margin-top: 20px;
   margin-bottom: 40px;
   padding: 20px 40px;
-
-  max-width: 700px;
+  transition: 1s;
+  
+  max-width: 900px;
   min-height: 300px;
-  background: rgb(243, 245, 244);
+  background: rgb(163, 255, 228);
   box-shadow: 0px 1px 2px gray;
+}
+
+.box:hover{
+  transform: scale(1.1);
+  background: #ff8000a;
+  z-index:2;
+  box-shadow: 2px 2px 2px gray;
 }
 
 .avatar {
@@ -86,31 +97,39 @@ h2 {
   margin: 20px;
 }
 
+
 .graph {
   text-align: center;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;  
+  width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .graph img {
-  width: 300px;
+  text-align: center;
+  width: 50%;
+  /* width: 300px; */
   height: 250px;
   margin: 20px;
 }
 
 .logo {
   text-align: center;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
-.logo img {
-  width: 250px;
-  height: 250px;
+
+.logo img{
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
   margin: 20px;
 }
 
 .projects {
-  background: deepskyblue;
+  background: rgba(186, 228, 241, 0.816);
 }
 
 .btn {
@@ -125,10 +144,50 @@ h2 {
   background: deepskyblue
 }
 
-
 .btn:hover {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
 }
+
+/* ######TagBOXES  */
+.tag-container {
+  max-width: 700px; /* helps wrap the tags in a specific width */
+}
+
+.dashfolio-tag {
+  cursor:pointer;
+  background-color: blue;
+  padding: 5px 10px 5px 10px;
+  display: inline-block;
+  margin-top: 3px; /*incase tags go in next line, will space */
+  color:#fff;
+  margin-right: 4px;
+  background:#789;
+  padding-right: 10px; /* adds space inside the tags for the 'x' button */
+}
+
+.dashfolio-tag:hover{
+  opacity:0.7;
+}
+
+.dashfolio-tag:after { 
+ position:absolute;
+ /* content:"×"; */
+folio-tag:after { 
+ position:absolute;
+ /* content:"×"; */
+ padding:2px 2px;
+ margin-left:2px;
+ font-size:11px;
+}
+
+#add-tag-input {
+  background:#eee;
+  border:0;
+  margin:6px 6px 6px 0px ; /* t r b l */
+  padding:5px;
+  width:auto;
+}      
+
 
 /* making it responsive : foll all screens < 425px */
 @media only screen and (max-width: 425px) {
@@ -144,40 +203,3 @@ h2 {
 
   }
 }
-
-/* ######TagBOXES  */
-.tag-container {
-  max-width: 300px; /* helps wrap the tags in a specific width */
-}
-
-.dashfolio-tag {
-  cursor:pointer;
-  background-color: blue;
-  padding: 5px 10px 5px 10px;
-  display: inline-block;
-  margin-top: 3px; /*incase tags go in next line, will space */
-  color:#fff;
-  margin-right: 4px;
-  background:#789;
-  padding-right: 20px; /* adds space inside the tags for the 'x' button */
-}
-
-.dashfolio-tag:hover{
-  opacity:0.7;
-}
-
-.dashfolio-tag:after { 
- position:absolute;
- content:"×";
- padding:2px 2px;
- margin-left:2px;
- font-size:11px;
-}
-
-#add-tag-input {
-  background:#eee;
-  border:0;
-  margin:6px 6px 6px 0px ; /* t r b l */
-  padding:5px;
-  width:auto;
-}      
