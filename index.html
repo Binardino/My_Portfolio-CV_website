@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <nav>
       <p>Robin Langlois - Data Analysis projects Portfolio</p>
-    </nav>
+      <a href="https://www.linkedin.com/in/robinlanglois/" class="fa fa-linkedin" aria-hidden="true"></a>
+      <a href="https://github.com/Binardino"  class="fa fa-github" aria-hidden="true"></a>    
+  </nav>
 
     <main>
       <div class="box">
         <h2>ABOUT ME</h2>
-
         <img src="https://i.imgur.com/X7nm0R5.png" class="avatar" />
 
         <p>
@@ -28,11 +30,18 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
         <p>Python | SQL | Pandas | SkLearn | Matplotlib | Seaborn | SciPy</p>
 
         <a href="https://app.box.com/file/674497428845" target="_blank">
-          <button class="btn">SEE MY RESUME</button>
-        </a>
+            <button class="btn">RESUME</button></a>
+          
+          <!-- <a href="https://www.linkedin.com/in/robinlanglois/" class="fa fa-linkedin">
+            <button class="btn">LinkedIn</button></a> -->
+          <!-- <a href="https://github.com/Binardino"  class="fa fa-github">
+            <button class="btn">GitHub</button></a>   -->
 
+        <!-- <a href="https://app.box.com/file/674497428845" target="_blank">
+        <button class="btn">SEE MY RESUME</button>
+        </a> -->
         <!-- <img src="https://i.imgur.com/T4EpAg6.png" /> -->
-      </div>
+        </div>
 
       <!-- <h1>Hello World !</h1> -->
 
@@ -43,13 +52,13 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
           conduct complete market analysis.
         </p>
 
-        <section class="images">
-          <img src="https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png" />
-          
-          <img src="https://i.imgur.com/4Qz4mxJ.png" />
+      <section class="logo">
+        <img src="https://logos-download.com/wp-content/uploads/2016/10/Python_logo_icon.png" />
+        
+        <img src="https://i.imgur.com/4Qz4mxJ.png" />
 
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/800px-Octicons-mark-github.svg.png"/>
-        </section>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/800px-Octicons-mark-github.svg.png"/>
+      </section>
       </div>
 
       <div class="box projects">
@@ -93,7 +102,7 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
             <span class="dashfolio-tag">Data visualization</span>
             <span class="dashfolio-tag">API data</span>
           </div>
-          <p></p>
+
           <p>
               This project, dubbed "Video Game Console Versus Fighting Story", aims at analyzing from 2000 onwards 
               the history of gaming consoles from a business standpoint. 
@@ -140,6 +149,33 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
 
       <div class="box projects">
         <h2>
+          <a
+            href="https://github.com/Binardino/Project-Week-3-Data-Thieves/blob/master/your-project/Working_notebooks/Project_Reviews_insights_%26_ways_of_improvements.ipynb"
+          >
+            AirBnB Barcelona - prices & offers analysis</a
+          >
+        </h2>
+
+        <div class="tag-container" id="tag-container">
+          <span class="dashfolio-tag">Python</span>
+          <span class="dashfolio-tag">Tableau</span>
+          <span class="dashfolio-tag">Data visualization</span>
+        </div>
+        <p>
+          Thrid project at Ironhack
+          The project aimed at collecting data from several AirBnB datasets in order to analyze the impact of several important events in Barcelona 
+          (mainly the Mobile World Congress) over the prices in AirBnB hosts over all main neighbourhoods of Barcelona.
+          Creating Tableau dashboards to analyze through several standpoints the evolution of AirBnB prices from 2016 onwards.
+        </p>
+   
+        <section class="graph">
+            <img
+              src="https://camo.githubusercontent.com/7823dacb723c39f00fa3bcf5352e8fed6b130bb9/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f42696e617264696e6f2f50726f6a6563742d5765656b2d332d446174612d546869657665732f6d61737465722f796f75722d70726f6a6563742f5461626c6561755f53637265656e73686f74732f4e65696768626f7572686f6f645f6d617070696e675f5461626c6561755f342e706e67"
+            />
+      </div>
+
+      <div class="box projects">
+        <h2>
           <a href="https://github.com/Binardino/Gaming_of_a_lifetime">
             SpaceX Launch History</a
           >
@@ -150,10 +186,10 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
           <span class="dashfolio-tag">Data visualization</span>
           <span class="dashfolio-tag">API data</span>
         </div>
-        <p></p>
+
         <p>
           Complete analysis of SpaceX launch history based on data from API call data 
-          from api.spacexdata from 2010 onwards  
+          from <a href="https://docs.spacexdata.com/?version=latest">rSpaceX API</a> from 2008 onwards  
           Data Analysis of SpaceX launch history based on :
           <li>Datavisualizations (Pyplot, Matlplotlib, Seaborn)</li> 
           <li>Python API calls</li>
@@ -162,7 +198,7 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
 
         <section class="graph">
           <img
-            src="https://raw.githubusercontent.com/Binardino/Gaming_of_a_lifetime/master/Plots_Charts_PNG/Score_comparison_Metascore_VS._Perso_score.png"
+            src="https://elchapuzasinformatico.com/wp-content/uploads/2018/02/falcon-heavy-spacex-despegue.jpg"
           />
         </section>
       </div>
@@ -181,7 +217,7 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
             <span class="dashfolio-tag">Geopandas</span>
             <span class="dashfolio-tag">API data</span>
           </div>
-          <p></p>
+
           <p>
               Operational Python & Geopandas Script to track in real time the International Space Station position through 
               API call to the NASA API, giving current ISS position (latitutde & longitude), 
@@ -206,7 +242,7 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
             <span class="dashfolio-tag">Data visualization</span>
             <span class="dashfolio-tag">Machine Learning</span>
           </div>
-          <p></p>
+
           <p>
             Kaggle's famous Titanic dataset analysis :
             - data visualization
@@ -262,7 +298,7 @@ Full-fledged Data Analyst recently graduated from Ironhack Barcelona</p>
           <span class="dashfolio-tag">API data</span>
         </div>
         <p>
-            All Labs & Exercises from the 3rd Module of the Ironhack Data Analysis bootcamp, 
+            All Labs & Exercises from the 1st Module of the Ironhack Data Analysis bootcamp, 
             focused on Python - NumPy, Pandas, API - & MySQL
         </p>
 
